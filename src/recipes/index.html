@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DishMate | Recipe Search & Filters</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicoin.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="../js/recipes.js" type="module"></script>
+    <script src="../js/main.js" type="module"></script>
+</head>
+<body>
+    <header id="main-header"></header>
+
+    <main class="divider">
+        <section class="recipe-search-section content-section">
+            <h2>Find Your Next Meal</h2>
+
+            <div class="search-and-filter-controls">
+                <div class="search-bar-container">
+                    <input type="text" id="search-input" placeholder="Search by recipe name..." class="search-input">
+                    <button id="search-button" class="search-button">Search</button>
+                </div>
+
+                <div class="filter-options-container">
+                    <div class="filter-group">
+                        <label for="category-filter">Category:</label>
+                        <select id="category-filter" class="filter-dropdown">
+                            <option value="">All Categories</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="area-filter">Area:</label>
+                        <select id="area-filter" class="filter-dropdown">
+                            <option value="">All Areas</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-container recipe-results-grid" id="recipe-results-container">
+                <!-- Recipe cards will be injected here by JavaScript -->
+                <p class="loading-message">Loading recipes...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer"></footer>
+
+    
+</body>
+</html>
