@@ -1,0 +1,38 @@
+[
+  {
+    "idMeal": "53011",
+    "strMeal": "Chicken Quinoa Greek Salad",
+    "description": "A refreshing and healthy salad packed with protein-rich quinoa, fresh vegetables, and a tangy lemon dressing.",
+    "strMealThumb": "/images/mediterranean-quinoa-salad-2.jpg",
+    "prepTime": "20 min",
+    "cookTime": "15 min",
+    "servings": 3
+  },
+  {
+    "idMeal": "52869",
+    "strMeal": "Tahini Lentils",
+    "description": "A nutritious and warming soup, perfect for cold days, loaded with vegetables and earthy lentils.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/vpxyqt1511464175.jpg",
+    "prepTime": "15 min",
+    "cookTime": "40 min",
+    "servings": 6
+  },
+  {
+    "idMeal": "53014",
+    "strMeal": "Pizza Express Margherita",
+    "description": "The timeless Italian classic with fresh mozzarella, ripe tomatoes, and fragrant basil on a crispy crust.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/x0lk931587671540.jpg",
+    "prepTime": "20 min",
+    "cookTime": "15 min",
+    "servings": 2
+  },
+  {
+    "idMeal": "52784",
+    "strMeal": "Smoky Lentil Chili with Squash",
+    "description": "A comforting and robust chili recipe, perfect for a cozy night in, packed with rich flavors.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/uwxqwy1483389553.jpg",
+    "prepTime": "20 min",
+    "cookTime": "60 min",
+    "servings": 6
+  }
+]
