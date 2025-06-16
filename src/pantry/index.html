@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DishMate | My Pantry</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicoin.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="../js/pantry.js" type="module"></script>
+    <script src="../js/main.js" type="module"></script>
+  </head>
+
+  <body>
+    <header id="main-header"></header>
+
+    <main class="divider">
+      <section class="my-pantry-section">
+        <h3 class="section-subtitle">My Pantry</h3>
+        <div class="cards-container pantry-basket-grid"></div>
+        <div class="get-recipes-btn-container">
+          <a href="/pantry/get_recipes.html" class="get-recipes-btn">Get recipes</a>
+        </div>
+      </section>
+
+      <section class="add-ingredients-section content-section">
+        <h3 class="section-subtitle">Add ingredients</h3>
+        <div class="search-bar-container">
+          <input type="text" placeholder="Placeholder" class="search-input" />
+          <button class="search-button">Search</button>
+        </div>
+        <div class="cards-container add-ingredients-grid"></div>
+      </section>
+    </main>
+
+    <footer id="main-footer"></footer>
+  </body>
+</html>
