@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DishMate | Meal Plan</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicoin.ico">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="../js/meal-plan.js" type="module"></script>
+    <script src="../js/main.js" type="module"></script>
+</head>
+<body>
+    <header id="main-header"></header>
+
+    <main class="divider">
+        <section class="meal-plan-section content-section">
+            <h2>Meal Plan</h2>
+
+            <div class="meal-plan-grid">
+                <div class="meal-plan-calendar-col">
+                    <label for="meal-date-picker">Select a Date:</label>
+                    <input type="text" id="meal-date-picker" placeholder="Select Date" class="flatpickr-input">
+                </div>
+
+                <div class="meal-plan-display-col">
+                    <h3 id="selected-date-heading">Meal(s) for {Date Not Selected}</h3>
+                    <div class="meals-for-date-container" id="meals-for-date-container">
+                        <p class="empty-message-small">No meals planned for this date.</p>
+                    </div>
+                    <div id="date-selection-error" class="error-message-inline" style="display: none;">
+                        Please select a date first.
+                    </div>
+                    <div id="favorites-error" class="error-message-inline" style="display: none;">
+                        You have no favorite recipes. Add some to plan meals!
+                    </div>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <section class="add-meal-from-favorites-section">
+                <h3 class="section-subtitle">Add Meal from Favorites</h3>
+                <div class="search-bar-container">
+                    <input type="text" id="favorite-search-input" placeholder="Search saved recipes..." class="search-input">
+                    <button id="favorite-search-button" class="search-button">Search</button>
+                </div>
+                <div class="cards-container add-favorite-meals-grid" id="favorites-for-planning-container">
+                    <p class="loading-message">Loading saved recipes...</p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer id="main-footer"></footer>
+
+    
+</body>
+</html>
