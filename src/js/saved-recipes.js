@@ -5,10 +5,10 @@ import {
   renderListWithTemplate,
 } from "./utils.mjs";
 
-const FAVORITES_STORAGE_KEY = "dm-favorites";
-const PANTRY_STORAGE_KEY = "dm-pantry";
-const THEMEALDB_LOOKUP_URL_BASE =
-  "https://www.themealdb.com/api/json/v1/1/lookup.php?i=";
+const FAVORITES_STORAGE_KEY = import.meta.env.VITE_FAVORITES_STORAGE_KEY;
+const PANTRY_STORAGE_KEY = import.meta.env.VITE_PANTRY_STORAGE_KEY;
+const THEMEALDB_LOOKUP_URL_BASE = import.meta.env
+  .VITE_THEMEALDB_LOOKUP_URL_BASE;
 
 // --- Saved Recipe Card Template ---
 function savedRecipeCardTemplate(recipe) {

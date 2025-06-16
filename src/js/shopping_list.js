@@ -4,7 +4,8 @@ import {
   renderListWithTemplate,
 } from "./utils.mjs";
 
-const SHOPPING_LIST_STORAGE_KEY = "dm-shopping-list"; // Consistent key for shopping list
+const SHOPPING_LIST_STORAGE_KEY = import.meta.env
+  .VITE_SHOPPING_LIST_STORAGE_KEY;
 
 // --- Shopping List Item Template ---
 function shoppingListItemTemplate(item) {

@@ -5,18 +5,16 @@ import {
   renderListWithTemplate,
 } from "./utils.mjs";
 
-const THEMEALDB_SEARCH_URL =
-  "https://www.themealdb.com/api/json/v1/1/search.php?s=";
-const THEMEALDB_CATEGORY_LIST_URL =
-  "https://www.themealdb.com/api/json/v1/1/list.php?c=list";
-const THEMEALDB_AREA_LIST_URL =
-  "https://www.themealdb.com/api/json/v1/1/list.php?a=list";
-const THEMEALDB_FILTER_CATEGORY_URL =
-  "https://www.themealdb.com/api/json/v1/1/filter.php?c=";
-const THEMEALDB_FILTER_AREA_URL =
-  "https://www.themealdb.com/api/json/v1/1/filter.php?a=";
-const PANTRY_STORAGE_KEY = "dm-pantry";
-const FAVORITES_STORAGE_KEY = "dm-favorites";
+const THEMEALDB_SEARCH_URL = import.meta.env.VITE_THEMEALDB_SEARCH_URL;
+const THEMEALDB_CATEGORY_LIST_URL = import.meta.env
+  .VITE_THEMEALDB_CATEGORY_LIST_URL;
+const THEMEALDB_AREA_LIST_URL = import.meta.env.VITE_THEMEALDB_AREA_LIST_URL;
+const THEMEALDB_FILTER_CATEGORY_URL = import.meta.env
+  .VITE_THEMEALDB_FILTER_URL_BASE;
+const THEMEALDB_FILTER_AREA_URL = import.meta.env
+  .VITE_THEMEALDB_FILTER_AREA_URL;
+const PANTRY_STORAGE_KEY = import.meta.env.VITE_PANTRY_STORAGE_KEY;
+const FAVORITES_STORAGE_KEY = import.meta.env.VITE_FAVORITES_STORAGE_KEY;
 
 // --- Recipe Card Template ---
 function recipeCardTemplate(recipe, pantryIngredientNames, isFavorite) {

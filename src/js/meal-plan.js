@@ -5,10 +5,10 @@ import {
   renderListWithTemplate,
 } from "./utils.mjs";
 
-const FAVORITES_STORAGE_KEY = "dm-favorites";
-const MEAL_PLAN_STORAGE_KEY = "dm-meal-plan";
-const THEMEALDB_LOOKUP_URL_BASE =
-  "https://www.themealdb.com/api/json/v1/1/lookup.php?i=";
+const FAVORITES_STORAGE_KEY = import.meta.env.VITE_FAVORITES_STORAGE_KEY;
+const MEAL_PLAN_STORAGE_KEY = import.meta.env.VITE_MEAL_PLAN_STORAGE_KEY;
+const THEMEALDB_LOOKUP_URL_BASE = import.meta.env
+  .VITE_THEMEALDB_LOOKUP_URL_BASE;
 
 // Template for a meal card displayed for a selected date
 function plannedMealCardTemplate(meal) {
@@ -294,8 +294,8 @@ class MealPlanManager {
           }),
       );
 
-      this.mealsForDateContainer.innerHTML = ""
-      
+      this.mealsForDateContainer.innerHTML = "";
+
       Promise.allSettled(plannedMealPromises).then((results) => {
         const fullMeals = results
           .filter((r) => r.status === "fulfilled" && r.value)

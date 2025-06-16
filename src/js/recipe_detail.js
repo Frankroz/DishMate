@@ -1,10 +1,11 @@
 import ExternalServices from "./ExternalServices.mjs";
 import { getLocalStorage, setLocalStorage, getParam } from "./utils.mjs";
 
-const PANTRY_STORAGE_KEY = "dm-pantry";
-const SHOPPING_LIST_STORAGE_KEY = "dm-shopping-list";
-const THEMEALDB_LOOKUP_URL_BASE =
-  "https://www.themealdb.com/api/json/v1/1/lookup.php?i=";
+const PANTRY_STORAGE_KEY = import.meta.env.VITE_PANTRY_STORAGE_KEY;
+const SHOPPING_LIST_STORAGE_KEY = import.meta.env
+  .VITE_SHOPPING_LIST_STORAGE_KEY;
+const THEMEALDB_LOOKUP_URL_BASE = import.meta.env
+  .VITE_THEMEALDB_LOOKUP_URL_BASE;
 
 // --- Recipe Detail Rendering ---
 function renderRecipeDetail(

@@ -1,12 +1,12 @@
 import ExternalServices from "./ExternalServices.mjs";
 import { getLocalStorage, setLocalStorage } from "./utils.mjs";
 
-const PANTRY_STORAGE_KEY = "dm-pantry";
-const FAVORITES_STORAGE_KEY = "dm-favorites";
-const THEMEALDB_FILTER_URL_BASE =
-  "https://www.themealdb.com/api/json/v1/1/filter.php?i=";
-const THEMEALDB_LOOKUP_URL_BASE =
-  "https://www.themealdb.com/api/json/v1/1/lookup.php?i=";
+const PANTRY_STORAGE_KEY = import.meta.env.VITE_PANTRY_STORAGE_KEY;
+const FAVORITES_STORAGE_KEY = import.meta.env.VITE_FAVORITES_STORAGE_KEY;
+const THEMEALDB_FILTER_URL_BASE = import.meta.env
+  .VITE_THEMEALDB_FILTER_URL_BASE;
+const THEMEALDB_LOOKUP_URL_BASE = import.meta.env
+  .VITE_THEMEALDB_LOOKUP_URL_BASE;
 
 // --- Recipe Card Template ---
 function recipeCardTemplate(recipe, isFavorite = false) {
@@ -180,7 +180,7 @@ class RecipeFinder {
       );
     }
 
-    this.addFavoriteButtonListeners()
+    this.addFavoriteButtonListeners();
   }
 
   addFavoriteButtonListeners() {
