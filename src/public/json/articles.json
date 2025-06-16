@@ -3,90 +3,110 @@
     "id": 201,
     "title": "5 Tips for Sustainable Eating",
     "description": "Learn how small changes in your eating habits can lead to a more sustainable lifestyle and reduce your carbon footprint.",
+    "longerDescription": "Dive deeper into the world of sustainable eating. This article explores practical tips like reducing food waste, choosing local produce, opting for plant-based meals more often, and understanding food labels to make eco-friendly choices in your kitchen.",
     "imageUrl": "/images/green_salad_vegetarian_diet_1.jpg",
     "author": "Dr. Emily Green",
     "publishDate": "2024-05-10",
-    "readTime": "5 min"
+    "readTime": "5 min",
+    "category": "Sustainability"
   },
   {
     "id": 202,
     "title": "Boosting Your Immune System with Food",
     "description": "Discover which foods are packed with immune-boosting nutrients and how to incorporate them into your daily meals.",
+    "longerDescription": "Fortify your body's defenses! This comprehensive guide delves into key vitamins and minerals like Vitamin C, Vitamin D, Zinc, and Selenium, found in everyday foods. We provide delicious recipe ideas to help you naturally enhance your immune system.",
     "imageUrl": "/images/immunity2.jpg",
     "author": "Chef Alex Stone",
     "publishDate": "2024-05-15",
-    "readTime": "7 min"
+    "readTime": "7 min",
+    "category": "Health"
   },
   {
     "id": 203,
     "title": "The Art of Meal Prepping for Beginners",
     "description": "A step-by-step guide to efficient meal prepping that saves you time, money, and stress throughout the week.",
+    "longerDescription": "Transform your weekly routine with effective meal prepping strategies. From planning your menu and grocery list to smart cooking techniques and proper food storage, this article covers everything you need to become a meal prep master.",
     "imageUrl": "/images/Apple-Dijon-Kale-Salad-Meal-Prep-3.jpg",
     "author": "Sarah Connor",
     "publishDate": "2024-05-20",
-    "readTime": "6 min"
+    "readTime": "6 min",
+    "category": "Cooking Tips"
   },
   {
     "id": 204,
     "title": "Understanding Macronutrients for Balanced Meals",
     "description": "Demystify proteins, carbs, and fats. Learn how to balance them for optimal energy and health.",
+    "longerDescription": "Gain clarity on the foundational building blocks of your diet: macronutrients. We explain the roles of proteins, carbohydrates, and fats in your body, provide examples of good sources, and offer simple methods for achieving balanced meals tailored to your needs.",
     "imageUrl": "/images/what-are-macronutrients4.jpg",
     "author": "Nutritionist B. Patel",
     "publishDate": "2024-05-25",
-    "readTime": "8 min"
+    "readTime": "8 min",
+    "category": "Nutrition"
   },
   {
     "id": 205,
     "title": "Gardening for Your Kitchen: Herbs Edition",
     "description": "Grow your own fresh herbs! A simple guide to starting an indoor or outdoor herb garden for culinary use.",
+    "longerDescription": "Add fresh flavors to your dishes directly from your windowsill or garden! This guide offers practical advice on choosing the right herbs, planting techniques, watering schedules, and harvesting tips for a successful and fragrant herb garden.",
     "imageUrl": "/images/herbs_in_windowsill5.jpg",
     "author": "Eco Enthusiast",
     "publishDate": "2024-06-01",
-    "readTime": "4 min"
+    "readTime": "4 min",
+    "category": "Lifestyle"
   },
   {
     "id": 206,
     "title": "Cooking with Seasonal Produce: Summer Delights",
     "description": "Embrace the flavors of summer with recipes and tips for cooking with fresh, in-season fruits and vegetables.",
+    "longerDescription": "Unlock the vibrant tastes of summer with produce at its peak. This article showcases delicious recipes featuring seasonal fruits and vegetables, offering inspiration for salads, grilling, and light summer meals. Learn how eating seasonally benefits both your health and the environment.",
     "imageUrl": "/images/Cookout_Food_Grill_SPT_Oaks6.jpg",
     "author": "Chef Lisa Chen",
     "publishDate": "2024-06-05",
-    "readTime": "7 min"
+    "readTime": "7 min",
+    "category": "Cooking Tips"
   },
   {
     "id": 207,
     "title": "Mastering Basic Knife Skills",
     "description": "Improve your kitchen efficiency and safety with essential knife techniques every home cook should know.",
+    "longerDescription": "Become more confident and efficient in the kitchen by mastering fundamental knife skills. This guide covers proper grip, basic cuts like dicing and mincing, and crucial safety tips to make food preparation easier and safer.",
     "imageUrl": "/images/knife-skills-7.jpg",
     "author": "Culinary Institute",
     "publishDate": "2024-06-08",
-    "readTime": "5 min"
+    "readTime": "5 min",
+    "category": "Cooking Tips"
   },
   {
     "id": 208,
     "title": "The Benefits of Plant-Based Diets",
     "description": "Explore the health and environmental advantages of incorporating more plant-based meals into your diet.",
+    "longerDescription": "Discover the compelling reasons to embrace a more plant-centric diet. We delve into the health benefits, including improved heart health and reduced risk of chronic diseases, as well as the significant positive impact on the environment.",
     "imageUrl": "/images/plant-based-diet-8.jpg",
     "author": "Dr. Sarah Kim",
     "publishDate": "2024-06-10",
-    "readTime": "9 min"
+    "readTime": "9 min",
+    "category": "Nutrition"
   },
   {
     "id": 209,
     "title": "Quick & Healthy Lunch Ideas for Work",
     "description": "Tired of boring office lunches? Here are 10 easy and nutritious ideas you can prepare in minutes.",
+    "longerDescription": "Reinvent your midday meal with these practical and delicious lunch ideas perfect for busy workdays. From vibrant salads to hearty wraps and creative bowls, these recipes are designed for portability and maximum nutrition.",
     "imageUrl": "/images/Lunches-for-Work-9.jpg",
     "author": "Busy Bee Cook",
     "publishDate": "2024-06-12",
-    "readTime": "6 min"
+    "readTime": "6 min",
+    "category": "Lifestyle"
   },
   {
     "id": 210,
     "title": "Reducing Food Waste: Creative Leftover Ideas",
     "description": "Don't throw away leftovers! Learn creative ways to transform yesterday's dinner into tomorrow's delicious meal.",
+    "longerDescription": "Combat food waste with ingenious ideas for repurposing your leftovers. This article offers tips for proper food storage, innovative recipes that breathe new life into forgotten ingredients, and strategies to minimize waste in your kitchen.",
     "imageUrl": "/images/baked-stuffed-fish-10.jpg",
     "author": "Waste Warrior",
     "publishDate": "2024-06-15",
-    "readTime": "5 min"
+    "readTime": "5 min",
+    "category": "Sustainability"
   }
 ]

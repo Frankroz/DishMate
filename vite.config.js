@@ -16,6 +16,7 @@ export default defineConfig({
         recipe_search: resolve(__dirname, "src/recipes/index.html"),
         saved_recipes: resolve(__dirname, "src//saved_recipes/index.html"),
         meal_planner: resolve(__dirname, "src//meal_planner/index.html"),
+        articles: resolve(__dirname, "src//articles/index.html"),
       },
     },
   },
