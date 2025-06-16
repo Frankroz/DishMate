@@ -10,7 +10,7 @@
     "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
     "test": "jest"
   },
-  "author": "Shane Thompson",
+  "author": "Francisco Rodriguez",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.56.0",

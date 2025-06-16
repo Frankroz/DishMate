@@ -41,5 +41,9 @@ function initializeMobileMenu() {
   }
 }
 
-await loadHeaderFooter();
-initializeMobileMenu();
+const setupPage = async () => {
+  await loadHeaderFooter();
+  initializeMobileMenu();
+};
+
+setupPage();
