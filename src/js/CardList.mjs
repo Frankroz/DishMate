@@ -15,7 +15,7 @@ function recipeCardTemplate(recipe) {
 }
 
 function articleCardTemplate(article) {
-  return `<a href="/article-detail/index.html?id=${article.id}" class="card-link">
+  return `<a href="/article_detail/index.html?id=${article.id}" class="card-link">
             <div class="card">
                 <img src="${article.imageUrl}" alt="${article.title}" class="card-image">
                 <h3>${article.title}</h3>
