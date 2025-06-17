@@ -1,5 +1,3 @@
-// js/ExternalServices.mjs
-
 async function convertToJson(res) {
   const jsonResponse = await res.json();
   if (res.ok) {
