@@ -1678,4 +1678,8 @@ s
     padding: 10px;
     text-align: center;
   }
+
+  .article-header {
+    flex-direction: column;
+  }
 }
