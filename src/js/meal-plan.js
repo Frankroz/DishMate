@@ -42,7 +42,7 @@ function renderEmptyMessage(containerElement, message, type = "default") {
   } else {
     html = `
       <div class="empty-message-container">
-        <img src="/images/empty-placeholder.png" alt="Empty Icon">
+        <img src="/images/empty-pantry.png" alt="Empty Icon">
         <h2>${message}</h2>
         <p>No items to display.</p>
       </div>
