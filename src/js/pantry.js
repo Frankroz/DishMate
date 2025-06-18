@@ -90,6 +90,7 @@ class PantryManager {
   }
 
   async loadAndRenderAddIngredients() {
+    this.addIngredientsListElement.innerHTML = "<div class='loader'></div>"
     try {
       // Fetch all ingredients from TheMealDB API
       const data = await this.externalServices.get(ingredients_url);

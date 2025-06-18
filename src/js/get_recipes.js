@@ -68,7 +68,7 @@ class RecipeFinder {
     const ingredientNames = pantryItems.map((item) => item.name);
 
     this.recipesContainer.innerHTML =
-      "<p class='loading-message'>Finding and analyzing recipes based on your pantry...</p>";
+      "<div><p class='loading-message'>Finding and analyzing recipes based on your pantry...</p><div class='loader'></div></div>";
 
     await this.fetchAndRenderRecipes(ingredientNames, pantryIngredientNames);
   }

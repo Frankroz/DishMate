@@ -73,7 +73,7 @@ class ArticleDetailManager {
     }
 
     this.articleDetailContainer.innerHTML =
-      "<p class='loading-message'>Fetching article details...</p>";
+      "<div class='loader'></div>";
 
     try {
       // Fetch all articles

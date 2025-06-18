@@ -19,6 +19,18 @@ ul {
   list-style: none;
 }
 
+/* Loading animation */
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid lightblue;
+  border-right-color: #2d2d2d;
+  animation: l2 1s infinite linear;
+}
+@keyframes l2 {to{transform: rotate(1turn)}}
+
 /* Main Layout Containers */
 .main-header,
 main,
@@ -227,6 +239,7 @@ main,
   flex-direction: column;
   text-align: center;
   padding-bottom: 15px;
+  transition: transform 0.2s ease;
 }
 
 .card-image-placeholder {
@@ -257,6 +270,10 @@ main,
   font-size: 0.9em;
   color: #666;
   padding: 0 15px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 /* Footer Styles */

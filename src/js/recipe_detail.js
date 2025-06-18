@@ -134,7 +134,7 @@ class RecipeDetailManager {
     }
 
     this.recipeDetailsContainer.innerHTML =
-      "<p class='loading-message'>Fetching recipe details...</p>";
+      "<div class='loading-message'><div class='loader'></div></div>";
 
     const pantryItems = getLocalStorage(PANTRY_STORAGE_KEY) || [];
     const pantryIngredientNames = new Set(

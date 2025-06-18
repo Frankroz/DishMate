@@ -76,7 +76,7 @@ class SavedRecipesManager {
     }
 
     this.savedRecipesContainer.innerHTML =
-      "<p class='loading-message'>Loading your saved recipes...</p>";
+      "<div class='loader'></div>";
 
     const lookupPromises = [];
     for (const savedRecipe of savedRecipeIds) {

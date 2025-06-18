@@ -178,7 +178,7 @@ class RecipeSearchAndFilterManager {
 
   async fetchAndRenderRecipes(url) {
     this.recipeResultsContainer.innerHTML =
-      "<p class='loading-message'>Loading recipes...</p>";
+      "<div class='loading-message'><div class='loader'></div></div>";
 
     try {
       const data = await this.externalServices.get(url);

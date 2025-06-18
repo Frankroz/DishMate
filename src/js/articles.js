@@ -81,7 +81,7 @@ class ArticleListingManager {
 
   async loadAllArticles() {
     this.articleResultsContainer.innerHTML =
-      "<p class='loading-message'>Loading articles...</p>";
+      "<div class='loader'></div>";
     try {
       const data = await this.externalServices.get(`${SERVER_URL}/articles`);
       if (Array.isArray(data)) {
