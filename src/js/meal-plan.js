@@ -9,6 +9,7 @@ const FAVORITES_STORAGE_KEY = import.meta.env.VITE_FAVORITES_STORAGE_KEY;
 const MEAL_PLAN_STORAGE_KEY = import.meta.env.VITE_MEAL_PLAN_STORAGE_KEY;
 const THEMEALDB_LOOKUP_URL_BASE = import.meta.env
   .VITE_THEMEALDB_LOOKUP_URL_BASE;
+const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
 // Template for a meal card displayed for a selected date
 function plannedMealCardTemplate(meal) {
@@ -42,7 +43,7 @@ function renderEmptyMessage(containerElement, message, type = "default") {
   } else {
     html = `
       <div class="empty-message-container">
-        <img src="/images/empty-pantry.png" alt="Empty Icon">
+        <img src="${SERVER_URL}/images/empty-pantry.png" alt="Empty Icon">
         <h2>${message}</h2>
         <p>No items to display.</p>
       </div>

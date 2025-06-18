@@ -9,6 +9,7 @@ const FAVORITES_STORAGE_KEY = import.meta.env.VITE_FAVORITES_STORAGE_KEY;
 const PANTRY_STORAGE_KEY = import.meta.env.VITE_PANTRY_STORAGE_KEY;
 const THEMEALDB_LOOKUP_URL_BASE = import.meta.env
   .VITE_THEMEALDB_LOOKUP_URL_BASE;
+const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
 // --- Saved Recipe Card Template ---
 function savedRecipeCardTemplate(recipe) {
@@ -35,7 +36,7 @@ function savedRecipeCardTemplate(recipe) {
 function renderEmptySavedRecipesMessage(containerElement) {
   containerElement.innerHTML = `
     <div class="empty-message-container">
-      <img src="/images/empty-pantry.png" alt="No Saved Recipes Icon">
+      <img src="${SERVER_URL}/images/empty-pantry.png" alt="No Saved Recipes Icon">
       <h2>You haven't saved any recipes yet!</h2>
       <p>Start saving your favorite finds from the recipe search to see them here.</p>
       <div class="cart-card__button">

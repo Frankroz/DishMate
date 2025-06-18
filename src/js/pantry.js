@@ -7,6 +7,7 @@ import {
 
 const pantry_storage_key = import.meta.env.VITE_PANTRY_STORAGE_KEY;
 const ingredients_url = import.meta.env.VITE_THEMEALDB_INGREDIENTS_URL;
+const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
 // --- Templates for Rendering ---
 function myPantryCardTemplate(item) {
@@ -21,7 +22,7 @@ function myPantryCardTemplate(item) {
 function renderEmptyPantryMessage() {
   const emptyMessageHtml = `
     <div class="empty-message-container">
-      <img src="/images/empty-pantry.png" alt="Empty Pantry Icon"> <!-- Placeholder image -->
+      <img src="${SERVER_URL}/images/empty-pantry.png" alt="Empty Pantry Icon"> <!-- Placeholder image -->
       <h2>Your pantry is empty!</h2>
       <p>Start adding ingredients to discover new recipes.</p>
     </div>

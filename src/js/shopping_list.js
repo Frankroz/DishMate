@@ -6,6 +6,7 @@ import {
 
 const SHOPPING_LIST_STORAGE_KEY = import.meta.env
   .VITE_SHOPPING_LIST_STORAGE_KEY;
+const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
 // --- Shopping List Item Template ---
 function shoppingListItemTemplate(item) {
@@ -25,7 +26,7 @@ function shoppingListItemTemplate(item) {
 function renderEmptyShoppingListMessage(containerElement) {
   containerElement.innerHTML = `
     <div class="empty-message-container">
-      <img src="/images/empty-pantry.png" alt="Empty Shopping Cart Icon"> <!-- Placeholder image -->
+      <img src="${SERVER_URL}/images/empty-pantry.png" alt="Empty Shopping Cart Icon"> <!-- Placeholder image -->
       <h2>Your shopping list is empty!</h2>
       <p>Add ingredients from recipe details or your pantry to start planning.</p>
       <div class="cart-card__button">

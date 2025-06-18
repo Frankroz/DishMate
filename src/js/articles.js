@@ -1,7 +1,7 @@
 import ExternalServices from "./ExternalServices.mjs";
 import { renderListWithTemplate } from "./utils.mjs";
 
-const ARTICLES_JSON_URL = import.meta.env.VITE_ARTICLES_JSON_URL;
+const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
 // --- Article Card Template ---
 function articleCardTemplate(article) {
@@ -25,7 +25,7 @@ function articleCardTemplate(article) {
 function renderNoResultsMessage(containerElement, message) {
   containerElement.innerHTML = `
     <div class="empty-message-container">
-      <img src="/images/empty-pantry.png" alt="No Articles Found Icon">
+      <img src="${SERVER_URL}/images/empty-pantry.png" alt="No Articles Found Icon">
       <h2>${message}</h2>
       <p>Try a different search term, category, or sorting option.</p>
     </div>
@@ -83,7 +83,7 @@ class ArticleListingManager {
     this.articleResultsContainer.innerHTML =
       "<p class='loading-message'>Loading articles...</p>";
     try {
-      const data = await this.externalServices.get(ARTICLES_JSON_URL);
+      const data = await this.externalServices.get(`${SERVER_URL}/articles`);
       if (Array.isArray(data)) {
         this.allArticles = data;
       } else if (data && Array.isArray(data.articles)) {
@@ -96,7 +96,7 @@ class ArticleListingManager {
       console.error("Error fetching articles:", error);
       this.articleResultsContainer.innerHTML = `
         <div class="empty-message-container">
-          <img src="/images/error-icon.png" alt="Error Icon">
+          <img src="${SERVER_URL}/images/empty-pantry.png" alt="Error Icon">
           <h2>Failed to load articles.</h2>
           <p>Please check your internet connection or the JSON file path.</p>
         </div>

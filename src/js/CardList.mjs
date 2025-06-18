@@ -1,5 +1,7 @@
 import { renderListWithTemplate } from "./utils.mjs";
 
+const SERVER_URL = import.meta.env.VITE_SERVER_URL;
+
 function recipeCardTemplate(recipe) {
   return `<a href="/recipe_detail/index.html?id=${recipe.idMeal}" class="card-link">
             <div class="card">
@@ -17,7 +19,7 @@ function recipeCardTemplate(recipe) {
 function articleCardTemplate(article) {
   return `<a href="/article_detail/index.html?id=${article.id}" class="card-link">
             <div class="card">
-                <img src="${article.imageUrl}" alt="${article.title}" class="card-image">
+                <img src="${SERVER_URL}${article.imageUrl}" alt="${article.title}" class="card-image">
                 <h3>${article.title}</h3>
                 <p>${article.description}</p>
                 <div class="card-meta">
@@ -37,7 +39,7 @@ export default class CardList {
   }
 
   async init() {
-    const list = await this.dataSource.get(`/json/${this.category}.json`);
+    const list = await this.dataSource.get(`${SERVER_URL}/${this.category}`);
 
     if (this.latest) {
       this.renderList(list.slice(0, 3));

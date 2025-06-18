@@ -6,6 +6,7 @@ const SHOPPING_LIST_STORAGE_KEY = import.meta.env
   .VITE_SHOPPING_LIST_STORAGE_KEY;
 const THEMEALDB_LOOKUP_URL_BASE = import.meta.env
   .VITE_THEMEALDB_LOOKUP_URL_BASE;
+const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
 // --- Recipe Detail Rendering ---
 function renderRecipeDetail(
@@ -16,7 +17,7 @@ function renderRecipeDetail(
   if (!recipe) {
     return `
       <div class="empty-message-container">
-        <img src="/images/empty-pantry.png" alt="Recipe Not Found Icon">
+        <img src="${SERVER_URL}/images/empty-pantry.png" alt="Recipe Not Found Icon">
         <h2>Recipe not found!</h2>
         <p>It seems this recipe ID is invalid or the recipe does not exist.</p>
       </div>

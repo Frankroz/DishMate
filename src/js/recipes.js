@@ -15,6 +15,7 @@ const THEMEALDB_FILTER_AREA_URL = import.meta.env
   .VITE_THEMEALDB_FILTER_AREA_URL;
 const PANTRY_STORAGE_KEY = import.meta.env.VITE_PANTRY_STORAGE_KEY;
 const FAVORITES_STORAGE_KEY = import.meta.env.VITE_FAVORITES_STORAGE_KEY;
+const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
 // --- Recipe Card Template ---
 function recipeCardTemplate(recipe, pantryIngredientNames, isFavorite) {
@@ -59,7 +60,7 @@ function recipeCardTemplate(recipe, pantryIngredientNames, isFavorite) {
 function renderNoResultsMessage(containerElement, message) {
   containerElement.innerHTML = `
     <div class="empty-message-container">
-      <img src="/images/empty-pantry.png" alt="No Recipes Found Icon">
+      <img src="${SERVER_URL}/images/empty-pantry.png" alt="No Recipes Found Icon">
       <h2>${message}</h2>
       <p>Try a different search term or adjust your filters.</p>
     </div>
@@ -195,7 +196,7 @@ class RecipeSearchAndFilterManager {
       console.error("Error fetching recipes:", error);
       this.recipeResultsContainer.innerHTML = `
         <div class="empty-message-container">
-          <img src="/images/empty-pantry.png" alt="Error Icon">
+          <img src="${SERVER_URL}/images/empty-pantry.png" alt="Error Icon">
           <h2>Failed to load recipes.</h2>
           <p>Please check your internet connection or try again later.</p>
         </div>

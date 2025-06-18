@@ -8,6 +8,8 @@ const THEMEALDB_FILTER_URL_BASE = import.meta.env
 const THEMEALDB_LOOKUP_URL_BASE = import.meta.env
   .VITE_THEMEALDB_LOOKUP_URL_BASE;
 
+const SERVER_URL = import.meta.env.VITE_SERVER_URL;
+
 // --- Recipe Card Template ---
 function recipeCardTemplate(recipe, isFavorite = false) {
   const ingredientCountText =
@@ -38,7 +40,7 @@ function recipeCardTemplate(recipe, isFavorite = false) {
 function renderNoRecipesMessage(containerElement, message) {
   containerElement.innerHTML = `
     <div class="empty-message-container">
-      <img src="/images/empty-pantry.png" alt="No Recipes Found Icon">
+      <img src="${SERVER_URL}/images/empty-pantry.png" alt="No Recipes Found Icon">
       <h2>${message}</h2>
       <p>Try adding more ingredients to your pantry or adjusting your selection.</p>
     </div>
